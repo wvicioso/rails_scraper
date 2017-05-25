@@ -25,7 +25,7 @@ This a web scraping Rails application that can also be used solely as an API.
       route: http://localhost:3000/websites
       method: 'post',
       body: JSON.stringify({
-        email: "url",
+        link: "url",
       }),
       headers: { Accept: 'application/json', 'Content-Type': 'application/json' }
 
