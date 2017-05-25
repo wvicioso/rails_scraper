@@ -8,7 +8,7 @@ This a web scraping Rails application that can also be used solely as an API.
 1) `git clone https://github.com/wvicioso/rails_scraper.git && cd rails_scraper`
 #### then
 
-2) `bundle install && rails rake:db create && rails rake:db migrate && rails s`
+2) `bundle install && rake:db create && rake:db migrate && rails s`
 
 ## API Documentation:
 ### get all previously parsed websites:
