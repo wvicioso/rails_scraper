@@ -17,12 +17,12 @@ This a web scraping Rails application that can also be used solely as an API.
       headers: { Accept: 'application/json', 'Content-Type': 'application/json' }
 
 ### get one website and its html content:
-      route: http://localhost:3000/websites/{websiteID}
+      route: http://localhost:3000/websites/{website-id}
       method: 'get',
       headers: { Accept: 'application/json', 'Content-Type': 'application/json' }
 
 ### parse new website and get its html contents:
-      route: http://localhost:3000/websites/"website-id"
+      route: http://localhost:3000/websites
       method: 'post',
       body: JSON.stringify({
         email: "url",
