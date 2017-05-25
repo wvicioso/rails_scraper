@@ -3,7 +3,7 @@
 This a web scraping Rails application that can also be used solely as an API.
 
 ## Setup Instructions:
-#### in you console
+#### In your console
 
 1) `git clone https://github.com/wvicioso/rails_scraper.git && cd rails_scraper`
 #### then
