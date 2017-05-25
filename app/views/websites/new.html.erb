@@ -1,0 +1,8 @@
+<h2>Parse a Link</h2>
+<a href="/">back</a>
+
+<%= form_tag "/websites", method: "post" do %>
+  <p style="color: red;"><%= @errors if @errors %></p>
+  <input type="text" name="link" placeholder="type link here">
+  <input type="submit">
+<% end %>

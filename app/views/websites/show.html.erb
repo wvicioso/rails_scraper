@@ -1,0 +1,24 @@
+
+<h3><%= @response[:link] %></h3>
+<a href="/">back</a>
+
+<ul>
+  <h4>h1 tags</h4>
+<% @response[:h1_tags].each do |item| %>
+  <li><%= item.content %></li>
+<% end %>
+</ul>
+
+<h4>h2 tags</h4>
+<ul>
+<% @response[:h2_tags].each do |item| %>
+  <li><%= item.content %></li>
+<% end %>
+</ul>
+
+<h4>h3 tags</h4>
+<ul>
+<% @response[:h3_tags].each do |item| %>
+  <li><%= item.content %></li>
+  <% end %>
+</ul>
