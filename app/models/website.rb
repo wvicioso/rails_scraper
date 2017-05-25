@@ -11,13 +11,22 @@ class Website < ApplicationRecord
     self.html_items.select { |item| item.tag == tag }
   end
 # formats content to by consumed by javascript front-end
-  def format_json_response
+  def format_single_json_response
     {
       status: 200,
       link: self.link,
-      h1_tags: self.sort_html_tags("h1"),
-      h2_tags: self.sort_html_tags("h2"),
-      h3_tags: self.sort_html_tags("h3")
+      h1Tags: self.sort_html_tags("h1"),
+      h2Tags: self.sort_html_tags("h2"),
+      h3Tags: self.sort_html_tags("h3")
+    }
+  end
+
+  def format_all_json_response
+    {
+      link: self.link,
+      h1Tags: self.sort_html_tags("h1"),
+      h2Tags: self.sort_html_tags("h2"),
+      h3Tags: self.sort_html_tags("h3")
     }
   end
 end

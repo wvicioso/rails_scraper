@@ -4,10 +4,14 @@ class WebsitesController < ApplicationController
 
   def index
     @websites = Website.all
+    response = {status: 200}
+    @websites.each do |site|
+      response[site.id] = site.format_all_json_response
+    end
 
     respond_to do |format|
       format.html
-      format.json { render :json => @websites }
+      format.json { render :json => response }
     end
   end
 
@@ -16,7 +20,7 @@ class WebsitesController < ApplicationController
 
     respond_to do |format|
       if website
-        @response = website.format_json_response
+        @response = website.format_single_json_response
         format.html
         format.json { render :json => @response }
       else
@@ -44,7 +48,7 @@ class WebsitesController < ApplicationController
         @new_website = Website.create({link: link})
         html_content = search_tags.map { |tag| [parse_for_tag(parsed_link, tag), tag] } # parses through html with given search tags
         html_content.each { |item| @new_website.create_html_items(item[0], item[1]) } # creates html_items that belong to the created website object
-        response = @new_website.format_json_response
+        response = @new_website.format_single_json_response
 
         format.html { redirect_to @new_website }
         format.json { render :json => response }
