@@ -1,0 +1,11 @@
+<h1>Web Parser</h1>
+<% if @websites %>
+<h4>previously parsed webpages</h4>
+<% end %>
+
+<% @websites.each do |item| %>
+<a href="/websites/<%=item.id%>"><%=item.link%></a><br>
+<% end %>
+
+<br><br>
+<a href="/websites/new">parse a new site</a>

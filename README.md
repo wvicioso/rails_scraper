@@ -1,24 +1,36 @@
-# README
+# Rails Web Scraper
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This a web scraping Rails application that can also be used solely as an API.
 
-Things you may want to cover:
+## Setup Instructions:
+#### in you console
 
-* Ruby version
+1) `git clone https://github.com/wvicioso/rails_scraper.git && cd rails_scrapper`
+#### then
 
-* System dependencies
+2) `bundle install && rails rake:db create && rails rake:db migrate && rails s`
 
-* Configuration
+## API Documentation:
+### get all previously parsed websites:
+      route: http://localhost:3000/websites
+      method: 'get',
+      headers: { Accept: 'application/json', 'Content-Type': 'application/json' }
 
-* Database creation
+### get one website and its html content:
+      route: http://localhost:3000/websites/{websiteID}
+      method: 'get',
+      headers: { Accept: 'application/json', 'Content-Type': 'application/json' }
 
-* Database initialization
+### parse new website and get its html contents:
+      route: http://localhost:3000/websites/"website-id"
+      method: 'post',
+      body: JSON.stringify({
+        email: "url",
+      }),
+      headers: { Accept: 'application/json', 'Content-Type': 'application/json' }
 
-* How to run the test suite
+## App Documentation:
+1) go to `http://localhost:3000/` in your web browser
+#### then
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+2) use the app freely
