@@ -19,8 +19,22 @@ CENTRAL exists is because, about five years ago, there was an initiative to cent
 Pricing cusips for these pools are generated using this data through Blackrock processes
 
 This a web scraping Rails application that can also be used solely as an API.
-pedersen.akp@gmail.com 
-Amanda <Amanda.Pedersen@blackrock.com>; Halpin, Joe <Joe.Halpin@blackrock.com>; Kain, Branimir <Branimir.Kain@blackrock.com>; O'Donnell-McCarthy, Claire <claire.odonnellmccarthy@blackrock.com>; Marks, Tuvia <Tuvia.Marks@blackrock.com>; justin.boganey@blackrock.com
+
+pedersen.akp@gmail.com
+Amanda.Pedersen@blackrock.com;
+Joe.Halpin@blackrock.com;
+Branimir.Kain@blackrock.com;
+claire.odonnellmccarthy@blackrock.com;
+Tuvia.Marks@blackrock.com; 
+justin.boganey@blackrock.com;
+sam.tubiello@blackrock.com;
+david.ott@blackrock.com;
+megan.martin@blackrock.com;
+faraz.rizvi@blackrock.com;
+lisa.puran@blackrock.com;
+benjamin.huber@blackrock.com;
+sarah.molly.emerson@blackrock.com;
+
 ## Setup Instructions:
 #### In your console
 
