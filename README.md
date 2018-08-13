@@ -20,6 +20,21 @@ Pricing cusips for these pools are generated using this data through Blackrock p
 
 This a web scraping Rails application that can also be used solely as an API.
 
+pedersen.akp@gmail.com
+Amanda.Pedersen@blackrock.com;
+Joe.Halpin@blackrock.com;
+Branimir.Kain@blackrock.com;
+claire.odonnellmccarthy@blackrock.com;
+Tuvia.Marks@blackrock.com; 
+justin.boganey@blackrock.com;
+sam.tubiello@blackrock.com;
+david.ott@blackrock.com;
+megan.martin@blackrock.com;
+faraz.rizvi@blackrock.com;
+lisa.puran@blackrock.com;
+benjamin.huber@blackrock.com;
+sarah.molly.emerson@blackrock.com;
+
 ## Setup Instructions:
 #### In your console
 
