@@ -61,7 +61,7 @@ This a web scraping Rails application that can also be used solely as an API.
             h3Tags: [],
       }
 
-## App Documentation:
+## Launch App:
 1) go to `http://localhost:3000/` in your web browser
 #### then
 
